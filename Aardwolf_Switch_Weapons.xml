@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<muclient>
+<plugin
+   name="Aardwolf_Switch_Weapons"
+   author="deathr"
+   id="25dcb9c5e9ba2ad7896bbde1"
+   language="Lua"
+   purpose="Leveraging dinv, it will automatically cycle through damage types quickly"
+   date_written="2025-10-31 08:04:18"
+   requires="5.07"
+   version="0.1"
+   >
+
+</plugin>
+
+<!--
+https://github.com/AardPlugins/Aardwolf-Switch-Weapons
+-->
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   script="alias_switch"
+   match="^switch\s*(.*)$"
+   enabled="y"
+   regexp="y"
+   ignore_case="y"
+   sequence="100"
+   expand_variables="y"
+  >
+  </alias>
+</aliases>
+
+
+<!--  Timers  -->
+
+<timers>
+  <timer
+   script="init_plugin"
+   enabled="y"
+   second="1.00"
+   offset_second="0.00"
+   send_to="12"
+   name="timer_init_plugin"
+  >
+  </timer>
+</timers>
+
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+dofile(GetPluginInfo(GetPluginID(), 20) .. "Aardwolf_Switch_Weapons.lua")
+]]>
+</script>
+
+
+</muclient>
