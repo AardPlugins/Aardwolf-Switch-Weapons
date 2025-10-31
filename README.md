@@ -59,25 +59,33 @@ The plugin follows Aardwolf's dual wielding rules:
 
 ```
 > switch
+
 [Switch] Switched to acid damage type
-[Switch]   Wielded: a corroded blade (Ave: 145)
-[Switch]   Second:  a small acid dagger (Ave: 89)
+[Switch]   Wielded: a corroded blade (Avg: 145)
+[Switch]   Second:  a small acid dagger (Avg: 89)
 
 > switch fire
+
 [Switch] Switched to fire damage type
-[Switch]   Wielded: flaming sword of doom (Ave: 178)
+[Switch]   Wielded: flaming sword of doom (Avg: 178)
 
 > switch status
+
 [Switch] Best Weapons by Damage Type:
-================================================================================
-Damage Type  | Weapon Name                              | Level | Ave Dam
---------------------------------------------------------------------------------
-  acid       | a corroded blade                         | 150   | 145
-* fire       | flaming sword of doom                    | 175   | 178
-  mental     | mind blade                               | 160   | 152
-  pierce     | deadly rapier                            | 155   | 148
-================================================================================
-Current damage type: fire (* = currently equipped)
+
+========================================================================================
+Damage Type | Slot     | Weapon Name                        | Level | Avg    | Weight
+----------------------------------------------------------------------------------------
+* acid      | Wielded  | a corroded blade                   | 150   | 145    | 8
+            | Second   | a small acid dagger                | 140   | 89     | 4
+  fire      | Wielded  | flaming sword of doom              | 175   | 178    | 12
+  mental    | Wielded  | mind blade                         | 160   | 152    | 6
+            | Second   | psionic dagger                     | 155   | 98     | 3
+  pierce    | Wielded  | deadly rapier                      | 155   | 148    | 5
+            | Second   | thin stiletto                      | 150   | 92     | 2
+========================================================================================
+
+[Switch] Current damage type: acid (* = currently equipped)
 ```
 
 ## Troubleshooting
